@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://3jdddk1boys1"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_1c1ty"]
+[ext_resource type="Texture2D" uid="uid://cx50xhrwlgda3" path="res://Assets/Placeholdermuitofoda_resized.png" id="1_x1h7e"]
+[ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="3_aort0"]
+[ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="4_l7fmj"]
+
+[node name="PlayerChar" type="CharacterBody2D" groups=["Players"]]
+script = ExtResource("1_1c1ty")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_x1h7e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("3_aort0")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+script = ExtResource("4_l7fmj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = ExtResource("3_aort0")

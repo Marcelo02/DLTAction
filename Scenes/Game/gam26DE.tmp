@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3tijgojty6qf"]
+
+[ext_resource type="PackedScene" uid="uid://3jdddk1boys1" path="res://Scenes/Player/player.tscn" id="1_5okua"]
+[ext_resource type="PackedScene" uid="uid://dyrbf5l4b52ux" path="res://Scenes/Player/Classes/fighter.tscn" id="2_fmmbw"]
+[ext_resource type="PackedScene" uid="uid://bybxtj7yo4pdd" path="res://Scenes/WallPlaceholder/WallPlaceholder.tscn" id="3_wxp1d"]
+
+[node name="Game" type="Node2D"]
+
+[node name="PlayerChar" parent="." instance=ExtResource("1_5okua")]
+position = Vector2(575, 342)
+init_HP = 100.0
+init_Mana = 100.0
+init_damage = 1.0
+init_armor = 0.0
+init_crit = 0.0
+init_magic = 1.0
+init_move_speed = 300.0
+base_move_speed = 0.0
+friction = 0.5
+
+[node name="FighterChar" parent="." instance=ExtResource("2_fmmbw")]
+position = Vector2(439, 312)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Debug" type="Label" parent="CanvasLayer"]
+offset_right = 79.0
+offset_bottom = 23.0
+text = "Debug_txt"
+
+[node name="WallPlaceholder" parent="." instance=ExtResource("3_wxp1d")]
+position = Vector2(83, 249)
+scale = Vector2(0.5, 5)

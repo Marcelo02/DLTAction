@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://l6aypmomm8cs"]
+
+[ext_resource type="Script" path="res://Scripts/Dummy.gd" id="1_slwb5"]
+[ext_resource type="Texture2D" uid="uid://b7wybikjdu6yf" path="res://Assets/placeholderdummy.png" id="2_idrka"]
+[ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="3_sd4lr"]
+[ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="3_wwb2a"]
+
+[node name="Dummy" type="CharacterBody2D" groups=["Enemies"]]
+script = ExtResource("1_slwb5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_idrka")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+script = ExtResource("3_sd4lr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = ExtResource("3_wwb2a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("3_wwb2a")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

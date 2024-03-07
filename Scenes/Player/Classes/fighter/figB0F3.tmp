@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyrbf5l4b52ux"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Classes/fighter/Fighter.gd" id="1_8ga6m"]
+[ext_resource type="Texture2D" uid="uid://dwkep8erm1scp" path="res://Assets/Placeholderfighter.png" id="2_0r3hl"]
+[ext_resource type="PackedScene" uid="uid://d0laqtc7ldmlk" path="res://Scenes/Player/Classes/fighter/meelee attack.tscn" id="3_lhxkf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eat53"]
+size = Vector2(32, 64)
+
+[node name="FighterChar" type="CharacterBody2D"]
+script = ExtResource("1_8ga6m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_0r3hl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eat53")
+
+[node name="MeeleeAttack" parent="." instance=ExtResource("3_lhxkf")]

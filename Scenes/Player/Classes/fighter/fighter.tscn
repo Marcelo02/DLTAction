@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyrbf5l4b52ux"]
+
+[ext_resource type="Script" path="res://Scripts/Fighter.gd" id="1_8ga6m"]
+[ext_resource type="Texture2D" uid="uid://dwkep8erm1scp" path="res://Assets/Placeholderfighter.png" id="2_0r3hl"]
+[ext_resource type="PackedScene" uid="uid://d0laqtc7ldmlk" path="res://Scenes/Player/Classes/fighter/light attack.tscn" id="3_lhxkf"]
+[ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="3_ni0uh"]
+[ext_resource type="PackedScene" uid="uid://3620ihfra2le" path="res://Scenes/Player/Classes/fighter/heavy attack.tscn" id="4_qpeae"]
+[ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="6_6ihup"]
+
+[node name="FighterChar" type="CharacterBody2D" groups=["Players"]]
+script = ExtResource("1_8ga6m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_0r3hl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("3_ni0uh")
+
+[node name="light_attack" parent="." instance=ExtResource("3_lhxkf")]
+
+[node name="heavy_attack" parent="." instance=ExtResource("4_qpeae")]
+z_index = -1
+
+[node name="Hurtbox" type="Area2D" parent="."]
+script = ExtResource("6_6ihup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = ExtResource("3_ni0uh")

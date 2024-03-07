@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3tijgojty6qf"]
+
+[ext_resource type="PackedScene" uid="uid://3jdddk1boys1" path="res://Scenes/Player/player.tscn" id="1_5okua"]
+[ext_resource type="Script" path="res://Scenes/Game/HUD.gd" id="2_0ah4f"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_5okua")]
+position = Vector2(678, 356)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("2_0ah4f")
+
+[node name="Debug" type="Label" parent="CanvasLayer"]
+offset_right = 79.0
+offset_bottom = 23.0
+text = "Debug_txt"

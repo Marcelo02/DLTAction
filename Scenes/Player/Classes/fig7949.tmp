@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyrbf5l4b52ux"]
+
+[ext_resource type="Script" path="res://Scenes/Player/Classes/Fighter.gd" id="1_8ga6m"]
+[ext_resource type="Texture2D" uid="uid://dwkep8erm1scp" path="res://Assets/Placeholderfighter.png" id="2_0r3hl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eat53"]
+size = Vector2(32, 64)
+
+[node name="FighterChar" type="CharacterBody2D"]
+script = ExtResource("1_8ga6m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_0r3hl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eat53")
