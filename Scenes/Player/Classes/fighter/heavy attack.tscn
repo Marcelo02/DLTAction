@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://3620ihfra2le"]
 
 [ext_resource type="Texture2D" uid="uid://da6eytjnbnytm" path="res://Assets/ataque forte-Sheet-export.png" id="1_01ssr"]
-[ext_resource type="Script" path="res://Scenes/Player/Classes/fighter/heavy attack.gd" id="1_63vc3"]
+[ext_resource type="Script" path="res://Scripts/heavy attack.gd" id="1_63vc3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2rj07"]
 size = Vector2(14.0001, 95.75)
