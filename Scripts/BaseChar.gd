@@ -125,7 +125,8 @@ func take_damage(_dano):
 func knockback(posicao_atacante: Vector2, _knockback: float):
 	var direcao_knockback = posicao_atacante.direction_to(self.global_position)
 	var knockback_force = _knockback
-	global_position += knockback_force * direcao_knockback
+	move_and_collide(knockback_force * direcao_knockback)
+	#global_position += knockback_force * direcao_knockback
 	pass
 
 func die():
