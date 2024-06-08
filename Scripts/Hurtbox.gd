@@ -17,3 +17,5 @@ func _on_area_entered(hitbox: Hitbox) -> void:
 		pass
 	if owner.has_method("take_damage") and groups != groups_Hitbox:
 		owner.take_damage(hitbox.damage)
+	if owner.has_method("knockback") and groups != groups_Hitbox:
+		owner.knockback(hitbox.position, hitbox.knockback)
