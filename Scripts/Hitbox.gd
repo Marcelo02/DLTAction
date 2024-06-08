@@ -2,6 +2,7 @@ class_name Hitbox
 extends Area2D
 
 var damage: int
+var knockback : float
 
 # Called when the node enters the scene tree for the first time.
 func _init():

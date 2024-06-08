@@ -4,3 +4,7 @@ res://Scenes/Player/player.tscn
 res://Scenes/Dummy/dummy.tscn
 res://Scenes/Player/Classes/fighter/light attack.tscn
 res://Scenes/Player/Classes/fighter/heavy attack.tscn
+res://Scripts/BaseChar.gd
+res://Scripts/Hurtbox.gd
+res://Scripts/Hitbox.gd
+res://Scripts/light_attack.gd
