@@ -6,6 +6,7 @@
 [ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="3_wwb2a"]
 
 [node name="Dummy" type="CharacterBody2D" groups=["Enemies"]]
+motion_mode = 1
 script = ExtResource("1_slwb5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

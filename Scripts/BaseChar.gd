@@ -111,6 +111,9 @@ func get_Aggro():
 func _ready() -> void:
 	set_MS(init_move_speed) #Setta a MS do player como a MS Inicial
 	set_baseMS(init_move_speed) #Setta a MS Base do player
+func _physics_process(delta):
+	move_and_slide()
+	pass
 
 func take_damage(_dano):
 	var dano = _dano
@@ -125,7 +128,10 @@ func take_damage(_dano):
 func knockback(posicao_atacante: Vector2, _knockback: float):
 	var direcao_knockback = posicao_atacante.direction_to(self.global_position)
 	var knockback_force = _knockback
+	print ("knockback para: ", direcao_knockback)
+	#velocity = knockback_force * direcao_knockback
 	move_and_collide(knockback_force * direcao_knockback)
+	#move_and_slide()
 	#global_position += knockback_force * direcao_knockback
 	pass
 

@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="6_6ihup"]
 
 [node name="FighterChar" type="CharacterBody2D" groups=["Players"]]
+motion_mode = 1
 script = ExtResource("1_8ga6m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
