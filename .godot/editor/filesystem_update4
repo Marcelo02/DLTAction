@@ -1,10 +1,8 @@
+res://Scenes/Dummy/dummy.tscn
 res://Scenes/Game/game.tscn
 res://Scenes/Player/Classes/fighter/fighter.tscn
 res://Scenes/Player/player.tscn
-res://Scenes/Dummy/dummy.tscn
 res://Scenes/Player/Classes/fighter/light attack.tscn
 res://Scenes/Player/Classes/fighter/heavy attack.tscn
-res://Scripts/BaseChar.gd
-res://Scripts/light_attack.gd
-res://Scripts/Hurtbox.gd
-res://Scripts/heavy attack.gd
+res://Scenes/Enemies/Zombie.tscn
+res://Scripts/Zombie.gd

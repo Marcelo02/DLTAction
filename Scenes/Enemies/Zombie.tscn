@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctcbnrf356vyf"]
+
+[ext_resource type="Script" path="res://Scripts/Zombie.gd" id="1_kjb7r"]
+[ext_resource type="Texture2D" uid="uid://ce1plendemwhg" path="res://Assets/PlaceholderZumbi.png" id="2_cyp1x"]
+[ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="3_cfly8"]
+[ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="4_ie6v4"]
+
+[node name="Zombie" type="CharacterBody2D" groups=["Enemies"]]
+motion_mode = 1
+script = ExtResource("1_kjb7r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_cyp1x")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+script = ExtResource("3_cfly8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = ExtResource("4_ie6v4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("4_ie6v4")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
