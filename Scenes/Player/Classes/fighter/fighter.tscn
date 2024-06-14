@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d0laqtc7ldmlk" path="res://Scenes/Player/Classes/fighter/light attack.tscn" id="3_lhxkf"]
 [ext_resource type="Shape2D" uid="uid://bppipnwj600bb" path="res://Scenes/Player/playerHB.tres" id="3_ni0uh"]
 [ext_resource type="PackedScene" uid="uid://3620ihfra2le" path="res://Scenes/Player/Classes/fighter/heavy attack.tscn" id="4_qpeae"]
-[ext_resource type="Script" path="res://Scripts/Hurtbox.gd" id="6_6ihup"]
+[ext_resource type="PackedScene" uid="uid://bl2rof7mck832" path="res://Scenes/Components/hurtbox.tscn" id="6_08mf7"]
 
 [node name="FighterChar" type="CharacterBody2D" groups=["Players"]]
 motion_mode = 1
@@ -23,8 +23,7 @@ shape = ExtResource("3_ni0uh")
 [node name="heavy_attack" parent="." instance=ExtResource("4_qpeae")]
 z_index = -1
 
-[node name="Hurtbox" type="Area2D" parent="."]
-script = ExtResource("6_6ihup")
+[node name="Hurtbox" parent="." instance=ExtResource("6_08mf7")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
 shape = ExtResource("3_ni0uh")

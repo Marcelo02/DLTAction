@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718047948
+::res://::1718325751
 icon.svg::CompressedTexture2D::8379293305335222173::1705179517::1705179522::1::::<><>::
-::res://Assets/::1718050749
+::res://Assets/::1718054329
 ataque forte-Sheet-export.png::CompressedTexture2D::7223544500919368266::1708452857::1708452965::1::::<><>::
 ataque forte.png::CompressedTexture2D::2237753731893847436::1705544376::1705544548::1::::<><>::
 AtaqueLeveAnimado.png::CompressedTexture2D::1832456119517895723::1708094165::1708094179::1::::<><>::
@@ -12,26 +12,28 @@ placeholderdummy.png::CompressedTexture2D::4679339420368348321::1706036299::1706
 Placeholderfighter.png::CompressedTexture2D::8724331783775506123::1705202869::1705202871::1::::<><>::
 Placeholdermuitofoda.png::CompressedTexture2D::8002545106774798262::1705180087::1705180089::1::::<><>::
 Placeholdermuitofoda_resized.png::CompressedTexture2D::6450675496701358856::1705180191::1705180193::1::::<><>::
-PlaceholderZumbi.png::CompressedTexture2D::5108201192486343564::1718050744::1718050749::1::::<><>::
+PlaceholderZumbi.png::CompressedTexture2D::5108201192486343564::1718054329::1718054329::1::::<><>::
 ponta da corrente.png::CompressedTexture2D::230891885932660872::1709925670::1709925670::1::::<><>::
-::res://Scenes/::1707494471
-::res://Scenes/Dummy/::1718051068
-dummy.tscn::PackedScene::836116656488473786::1718050839::0::1::::<><>::res://Scripts/Dummy.gd<>uid://b7wybikjdu6yf::::res://Assets/placeholderdummy.png<>res://Scripts/Hurtbox.gd<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres
-Zombie.tscn::PackedScene::6110642986264967073::1718051068::0::1::::<><>::res://Scripts/Dummy.gd<>uid://b7wybikjdu6yf::::res://Assets/placeholderdummy.png<>res://Scripts/Hurtbox.gd<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres
-::res://Scenes/Enemies/::1707494626
-::res://Scenes/Game/::1717896187
-game.tscn::PackedScene::4391433628175070897::1717896187::0::1::::<><>::uid://3jdddk1boys1::::res://Scenes/Player/player.tscn<>uid://dyrbf5l4b52ux::::res://Scenes/Player/Classes/fighter/fighter.tscn<>uid://bybxtj7yo4pdd::::res://Scenes/WallPlaceholder/WallPlaceholder.tscn<>uid://l6aypmomm8cs::::res://Scenes/Dummy/dummy.tscn
-::res://Scenes/Player/::1717896084
-player.tscn::PackedScene::1984054704212789406::1717896084::0::1::::<><>::res://Scripts/player.gd<>uid://cx50xhrwlgda3::::res://Assets/Placeholdermuitofoda_resized.png<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres<>res://Scripts/Hurtbox.gd
+::res://Scenes/::1718327084
+hurtbox.tscn::PackedScene::3215293665661591623::1718327172::0::1::::<><>::res://Scripts/Hurtbox.gd
+::res://Scenes/Components/::1718327057
+::res://Scenes/Dummy/::1718052535
+dummy.tscn::PackedScene::836116656488473786::1718052535::0::1::::<><>::res://Scripts/Dummy.gd<>uid://b7wybikjdu6yf::::res://Assets/placeholderdummy.png<>res://Scripts/Hurtbox.gd<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres
+::res://Scenes/Enemies/::1718054329
+Zombie.tscn::PackedScene::6110642986264967073::1718054329::0::1::::<><>::res://Scripts/Zombie.gd<>uid://ce1plendemwhg::::res://Assets/PlaceholderZumbi.png<>res://Scripts/Hurtbox.gd<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres
+::res://Scenes/Game/::1718326101
+game.tscn::PackedScene::4391433628175070897::1718326101::0::1::::<><>::uid://3jdddk1boys1::::res://Scenes/Player/player.tscn<>uid://dyrbf5l4b52ux::::res://Scenes/Player/Classes/fighter/fighter.tscn<>uid://bybxtj7yo4pdd::::res://Scenes/WallPlaceholder/WallPlaceholder.tscn<>uid://l6aypmomm8cs::::res://Scenes/Dummy/dummy.tscn<>uid://ctcbnrf356vyf::::res://Scenes/Enemies/Zombie.tscn
+::res://Scenes/Player/::1718052535
+player.tscn::PackedScene::1984054704212789406::1718052535::0::1::::<><>::res://Scripts/player.gd<>uid://cx50xhrwlgda3::::res://Assets/Placeholdermuitofoda_resized.png<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres<>res://Scripts/Hurtbox.gd
 playerHB.tres::CapsuleShape2D::3470732244665794399::1706036482::0::1::::<><>::
 ::res://Scenes/Player/Classes/::1705416680
-::res://Scenes/Player/Classes/fighter/::1717896084
-fighter.tscn::PackedScene::8878959960186915083::1717896084::0::1::::<><>::res://Scripts/Fighter.gd<>uid://dwkep8erm1scp::::res://Assets/Placeholderfighter.png<>uid://d0laqtc7ldmlk::::res://Scenes/Player/Classes/fighter/light attack.tscn<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres<>uid://3620ihfra2le::::res://Scenes/Player/Classes/fighter/heavy attack.tscn<>res://Scripts/Hurtbox.gd
-heavy attack.tscn::PackedScene::2030967767143435222::1717896084::0::1::::<><>::uid://da6eytjnbnytm::::res://Assets/ataque forte-Sheet-export.png<>res://Scripts/heavy attack.gd
-light attack.tscn::PackedScene::8936720872529275640::1717896084::0::1::::<><>::uid://1dwjw7qe3jsd::::res://Assets/AtaqueLeveAnimado.png<>res://Scripts/light_attack.gd
+::res://Scenes/Player/Classes/fighter/::1718054329
+fighter.tscn::PackedScene::8878959960186915083::1718327272::0::1::::<><>::res://Scripts/Fighter.gd<>uid://dwkep8erm1scp::::res://Assets/Placeholderfighter.png<>uid://d0laqtc7ldmlk::::res://Scenes/Player/Classes/fighter/light attack.tscn<>uid://bppipnwj600bb::::res://Scenes/Player/playerHB.tres<>uid://3620ihfra2le::::res://Scenes/Player/Classes/fighter/heavy attack.tscn<>uid://bl2rof7mck832::::res://Scenes/hurtbox.tscn
+heavy attack.tscn::PackedScene::2030967767143435222::1718052535::0::1::::<><>::uid://da6eytjnbnytm::::res://Assets/ataque forte-Sheet-export.png<>res://Scripts/heavy attack.gd
+light attack.tscn::PackedScene::8936720872529275640::1718054329::0::1::::<><>::uid://1dwjw7qe3jsd::::res://Assets/AtaqueLeveAnimado.png<>res://Scripts/light_attack.gd
 ::res://Scenes/WallPlaceholder/::1705204153
 WallPlaceholder.tscn::PackedScene::4074448252931968493::1705204153::0::1::::<><>::uid://bboqhq3ukhsq7::::res://Assets/paredeplaceholder.png
-::res://Scripts/::1717895944
+::res://Scripts/::1718054329
 BaseChar.gd::GDScript::-1::1717895944::0::1::::BaseChar<>CharacterBody2D<>::
 Dummy.gd::GDScript::-1::1708807762::0::1::::Dummy<>EnemyChar<>::
 Enemy.gd::GDScript::-1::1707495608::0::1::::EnemyChar<>BaseChar<>::
@@ -41,3 +43,4 @@ Hitbox.gd::GDScript::-1::1717808651::0::1::::Hitbox<>Area2D<>::
 Hurtbox.gd::GDScript::-1::1717895944::0::1::::Hurtbox<>Area2D<>::
 light_attack.gd::GDScript::-1::1717895944::0::1::::<>Hitbox<>::
 player.gd::GDScript::-1::1707495560::0::1::::PlayerChar<>BaseChar<>::
+Zombie.gd::GDScript::-1::1718054329::0::1::::Zombie<>EnemyChar<>::
