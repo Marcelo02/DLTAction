@@ -13,7 +13,7 @@ func _ready():
 	
 	set_MS(400.0)#Setta a MS do player como a MS Inicial
 	set_baseMS(400.0) #Setta a MS Base do player
-	
+	set_Aggro(10)
 	set_damage(5)
 	
 	pass # Replace with function body.

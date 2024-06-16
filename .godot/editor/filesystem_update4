@@ -1,6 +1,10 @@
-res://Scenes/Game/game.tscn
-res://Scenes/hurtbox.tscn
 res://Scenes/Player/Classes/fighter/fighter.tscn
+res://Scripts/Fighter.gd
+res://Scripts/Zombie.gd
+res://Scenes/Game/game.tscn
+res://Scripts/Enemy.gd
 res://Scenes/Player/player.tscn
+res://Scenes/Player/Classes/fighter/light attack.tscn
+res://Scenes/Player/Classes/fighter/heavy attack.tscn
+res://Scenes/Components/hurtbox.tscn
 res://Scenes/Enemies/Zombie.tscn
-res://Scripts/Hurtbox.gd
