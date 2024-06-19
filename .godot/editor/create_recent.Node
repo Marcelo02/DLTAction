@@ -1,3 +1,5 @@
+RichTextLabel
+CanvasLayer
 CollisionShape2D
 RigidBody2D
 Timer
@@ -9,4 +11,3 @@ Sprite2D
 Area2D
 TileMap
 Label
-CanvasLayer
