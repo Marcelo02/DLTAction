@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnax72nkyrr5d"]
+
+[ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_5p32n"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_5p32n")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VidaDisplay" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
