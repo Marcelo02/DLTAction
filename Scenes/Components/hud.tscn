@@ -1,15 +1,20 @@
-[gd_scene format=3 uid="uid://cfrok5xe08tf0"]
+[gd_scene load_steps=2 format=3 uid="uid://cfrok5xe08tf0"]
+
+[ext_resource type="Script" path="res://Scripts/HUD_Control.gd" id="1_yrsmb"]
 
 [node name="HUD" type="CanvasLayer"]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
+offset_right = 96.0
 offset_bottom = 40.0
+script = ExtResource("1_yrsmb")
+metadata/_edit_use_anchors_ = true
 
 [node name="Vida" type="Label" parent="Control"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 text = "VIDA: 9999"
+metadata/_edit_use_anchors_ = true
