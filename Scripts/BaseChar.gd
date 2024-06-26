@@ -2,30 +2,32 @@ class_name BaseChar
 extends CharacterBody2D
 #Esse Script cria os stats e setta os valores iniciais de qualquer figura do jogo
 #Valores iniciais
-@export var init_HP: int = 100 #Vida inicial
-@export var init_Mana: float = 100.0 #Mana inicial
-@export var init_damage: float = 1.0 #Dano inicial
-@export var init_armor: float = 0.0 #Armor inicial
-@export var init_crit: float = 0.0 #Crítico inicial
-@export var init_magic: float = 1.0 #Magia inicial
-@export var init_CDR: float = 0.0 #Redução no cooldown de habilidades
-@export var init_move_speed: float = 300.0 #Move Speed inicial
-@export var init_aggro: float = 1.0 # Aggro inicial
-var char_class: String = "none"
+#@export var init_HP: int = 100 #Vida inicial
+#@export var init_Mana: float = 100.0 #Mana inicial
+#@export var init_damage: float = 1.0 #Dano inicial
+#@export var init_armor: float = 0.0 #Armor inicial
+#@export var init_crit: float = 0.0 #Crítico inicial
+#@export var init_magic: float = 1.0 #Magia inicial
+#@export var init_CDR: float = 0.0 #Redução no cooldown de habilidades
+#@export var init_move_speed: float = 300.0 #Move Speed inicial
+#@export var init_aggro: float = 1.0 # Aggro inicial
+
 
 #Valores reais
-var HP: int
-var max_HP: float
-var mana: float
-var max_mana: float
-var damage: float
-var armor: float
-var crit: float
-var magic: float
-var CDR: float
-var move_speed: float #Move speed atual, alterável e não quero dar acesso ao player
-var base_move_speed: float
-var aggro: float
+@export var HP: int
+@export var max_HP: float
+@export var mana: float
+@export var max_mana: float
+@export var damage: float
+@export var armor: float
+@export var crit: float
+@export var magic: float
+@export var CDR: float
+@export var move_speed: float #Move speed atual, alterável e não quero dar acesso ao player
+@export var base_move_speed: float
+@export var aggro: float
+@export var char_class: String
+@export var friction: float = 0.5 #Fricção base
 
 #Setters e getters
 func set_HP(new_HP): 

@@ -5,12 +5,20 @@
 [ext_resource type="PackedScene" uid="uid://bybxtj7yo4pdd" path="res://Scenes/WallPlaceholder/WallPlaceholder.tscn" id="3_wxp1d"]
 [ext_resource type="PackedScene" uid="uid://l6aypmomm8cs" path="res://Scenes/Dummy/dummy.tscn" id="4_36pq5"]
 [ext_resource type="PackedScene" uid="uid://ctcbnrf356vyf" path="res://Scenes/Enemies/Zombie.tscn" id="5_8j4tg"]
-[ext_resource type="Script" path="res://Scripts/HUD.gd" id="6_qtqac"]
+[ext_resource type="PackedScene" uid="uid://cfrok5xe08tf0" path="res://Scenes/Components/hud.tscn" id="6_8bobp"]
 
 [node name="Game" type="Node2D"]
 
 [node name="PlayerChar" parent="." instance=ExtResource("1_5okua")]
 position = Vector2(379, 306)
+friction = null
+init_armor = null
+init_crit = null
+init_magic = null
+init_CDR = null
+init_move_speed = null
+init_aggro = null
+HP = null
 
 [node name="FighterChar" parent="." instance=ExtResource("2_fmmbw")]
 position = Vector2(439, 312)
@@ -25,12 +33,4 @@ position = Vector2(735, 288)
 [node name="Zombie" parent="." instance=ExtResource("5_8j4tg")]
 position = Vector2(662, 377)
 
-[node name="HUD" type="CanvasLayer" parent="."]
-script = ExtResource("6_qtqac")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="HUD"]
-offset_right = 250.0
-offset_bottom = 109.0
-text = "Dedug
-
-"
+[node name="HUD" parent="." instance=ExtResource("6_8bobp")]

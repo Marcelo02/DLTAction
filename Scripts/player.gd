@@ -1,9 +1,6 @@
 class_name PlayerChar
 extends BaseChar
 
-#Outras Vars
-@export var friction: float = 0.5 #Fricção base
-
 
 func _physics_process(delta) -> void:
 	get_input() #Pega inputs
