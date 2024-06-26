@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bybxtj7yo4pdd" path="res://Scenes/WallPlaceholder/WallPlaceholder.tscn" id="3_wxp1d"]
 [ext_resource type="PackedScene" uid="uid://l6aypmomm8cs" path="res://Scenes/Dummy/dummy.tscn" id="4_36pq5"]
 [ext_resource type="PackedScene" uid="uid://ctcbnrf356vyf" path="res://Scenes/Enemies/Zombie.tscn" id="5_8j4tg"]
-[ext_resource type="Script" path="res://Scripts/HUD_Control.gd" id="6_r6by5"]
+[ext_resource type="PackedScene" uid="uid://cfrok5xe08tf0" path="res://Scenes/Components/hud.tscn" id="6_8bobp"]
 
 [node name="Game" type="Node2D"]
 
@@ -25,16 +25,4 @@ position = Vector2(735, 288)
 [node name="Zombie" parent="." instance=ExtResource("5_8j4tg")]
 position = Vector2(662, 377)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("6_r6by5")
-
-[node name="Vida" type="Label" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="HUD" parent="." instance=ExtResource("6_8bobp")]

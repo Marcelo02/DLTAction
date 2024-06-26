@@ -109,10 +109,14 @@ func set_Aggro(new_Aggro):
 	aggro = new_Aggro
 func get_Aggro():
 	return aggro
+
 #Funções básicas
 func _ready() -> void:
-	set_MS(init_move_speed) #Setta a MS do player como a MS Inicial
-	set_baseMS(init_move_speed) #Setta a MS Base do player
+	set_HP(max_HP)
+	set_mana(max_mana)
+	#set_MS(init_move_speed) #Setta a MS do player como a MS Inicial
+	#set_baseMS(init_move_speed) #Setta a MS Base do player
+	pass
 func _physics_process(delta):
 	move_and_slide()
 	pass

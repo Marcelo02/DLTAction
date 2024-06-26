@@ -10,6 +10,18 @@
 [node name="FighterChar" type="CharacterBody2D" groups=["Players"]]
 motion_mode = 1
 script = ExtResource("1_8ga6m")
+HP = 300
+max_HP = 300.0
+mana = 50.0
+max_mana = 50.0
+damage = 10.0
+armor = 5.0
+crit = 5.0
+magic = 2.0
+move_speed = 400.0
+base_move_speed = 400.0
+aggro = 5.0
+char_class = "Fighter"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.4, 0.4)

@@ -10,16 +10,6 @@ var running_bonus: float = 1.25
 
 func _ready():
 	state_atual = states.IDLE
-	#set_maxHP(1000)
-	#set_HP(get_maxHP())
-	print("Minha vida é: ",get_maxHP())
-	set_MS(400.0)#Setta a MS do player como a MS Inicial
-	set_baseMS(400.0) #Setta a MS Base do player
-	set_Aggro(10)
-	set_damage(5)
-	
-	pass # Replace with function body.
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	get_input()
