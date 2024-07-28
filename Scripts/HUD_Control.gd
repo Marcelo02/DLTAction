@@ -1,15 +1,21 @@
 extends Control
 @onready var fighter_char = $"../../FighterChar"
 @onready var vida = $Vida
-var Vida
+@onready var vida_barra = $VidaBarra
+@onready var mana = $Mana
+@onready var mana_barra = $ManaBarra
+var barraHP
+var barraMana
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	vida.text = str(fighter_char.get_HP())
+	update()
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	
-	pass
+func update():
+	fighter_char.TakeDamage.connect(update)
+	vida.text = str(fighter_char.get_HP()) + "/" + str(fighter_char.get_maxHP())
+	barraHP = fighter_char.get_HP() * 100/ fighter_char.get_maxHP()
+	vida_barra.value = barraHP
+	mana.text = str(fighter_char.get_mana()) +"/"+ str(fighter_char.get_maxMana())
+	barraMana = fighter_char.get_mana() * 100 / fighter_char.get_maxMana()
+	mana_barra.value = barraMana

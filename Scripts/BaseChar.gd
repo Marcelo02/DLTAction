@@ -29,6 +29,9 @@ extends CharacterBody2D
 @export var char_class: String
 @export var friction: float = 0.5 #Fricção base
 
+#sinais
+signal TakeDamage
+
 #Setters e getters
 func set_HP(new_HP): 
 	print("Vida alterada para ", new_HP)
@@ -126,6 +129,7 @@ func take_damage(_dano):
 	set_HP(HP - dano)
 	print("tomou dano igual a ", dano)
 	print("Vida atual: ", get_HP())
+	TakeDamage.emit()
 	if get_HP() <= 0:
 		print("Morreu :(")
 		die()

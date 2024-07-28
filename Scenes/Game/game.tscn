@@ -38,3 +38,22 @@ script = ExtResource("6_r6by5")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="VidaBarra" type="ProgressBar" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 41.0
+offset_right = 199.0
+offset_bottom = 79.0
+
+[node name="Mana" type="Label" parent="CanvasLayer/Control"]
+offset_left = 5.0
+offset_top = 86.0
+offset_right = 45.0
+offset_bottom = 109.0
+
+[node name="ManaBarra" type="ProgressBar" parent="CanvasLayer/Control"]
+offset_left = 10.0
+offset_top = 127.0
+offset_right = 204.0
+offset_bottom = 165.0

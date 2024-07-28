@@ -48,7 +48,7 @@ func attack2():
 		state_atual = states.IDLE
 		print("ataque concluido :)")
 
-func skill1():
+func skill1(): #Aperte para correr ou cancelar, consome mana/segundo.
 	if state_atual == states.RUNNING:
 		print("Corrida cancelada")
 		set_MS(get_baseMS())
@@ -58,7 +58,7 @@ func skill1():
 		state_atual = states.RUNNING
 	pass
 
-func skill2():
+func skill2(): #Lança gancho que puxa alvo para perto e causa slow temporário.
 	print("gancho para ", get_mouse_direction())
 	
 
